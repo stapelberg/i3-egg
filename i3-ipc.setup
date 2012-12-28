@@ -1,0 +1,7 @@
+(compile -s -O2 -d1 i3.scm -j i3)
+(compile -s i3.import.scm -O2 -d0)
+
+(install-extension
+  'i3-ipc
+  '("i3.so" "i3.import.so")
+  '((version "0.1")))
