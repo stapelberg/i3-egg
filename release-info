@@ -1,3 +1,3 @@
 (repo git "git://code.stapelberg.de/i3-egg")
 (uri targz "http://code.stapelberg.de/git/i3-egg/snapshot/i3-egg-{egg-release}.tar.gz")
-(release "0.1")
+(release "0.2")
