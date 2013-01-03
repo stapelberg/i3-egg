@@ -1,7 +1,9 @@
-(compile -s -O2 -d1 i3.scm -j i3)
+(compile -X cock -s -O2 -d1 i3.scm -j i3)
 (compile -s i3.import.scm -O2 -d0)
 
 (install-extension
   'i3-ipc
   '("i3.so" "i3.import.so")
   '((version "0.2")))
+
+(run (cock -o i3.wiki i3.scm i3-core.scm))

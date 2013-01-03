@@ -10,9 +10,9 @@
 	 (tree (tree conn))
 	 (workspace (descend-focused (lambda (con) (= (alist-ref 'type con) 4)) tree))
 	 (chrome-windows (filter-containers
-			  workspace
 			  (lambda (con)
-			    (string-suffix? " - Google Chrome" (alist-ref 'name con))))))
+			    (string-suffix? " - Google Chrome" (alist-ref 'name con)))
+			  workspace)))
     (if (null? chrome-windows)
 	(cmd conn "exec google-chrome")
 	;; XXX: It’d be better (but significantly more complex) if
