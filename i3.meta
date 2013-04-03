@@ -1,6 +1,6 @@
 ((license "BSD")
  ;; os is not the best possible category, but the best we have.
  (category os)
- (needs medea shell socket cock)
+ (needs medea shell socket cock cock-utils)
  (author "Michael Stapelberg")
  (synopsis "Extends the i3 window manager via its IPC interface."))
